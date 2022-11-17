@@ -1,6 +1,8 @@
 # mytelkomsel
 
-A new Flutter project.
+Rebuild myTelkomsel apps using Flutter
+
+UI & UX credit to Muhammad Najib at https://www.figma.com/community/file/901556661257999936
 
 ## Getting Started
 
