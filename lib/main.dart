@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mytelkomsel/login/login.dart';
 import 'package:mytelkomsel/splash/splash.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: Future.delayed(const Duration(seconds: 5)),
+      future: Future.delayed(const Duration(seconds: 0)),
       builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Splash();
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
               // is not restarted.
               primarySwatch: Colors.red,
             ),
-            home: const MyHomePage(title: ''),
+            //home: const MyHomePage(title: ''),
+            home: const Login(),
           );
         }
       },
